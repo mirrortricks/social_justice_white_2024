@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching For Social Justice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #F4F1EA;
+            color: #1A202C;
+            line-height: 1.6;
+        }
+        
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            border-left: 2px dotted #8e95a3; /* Charcoal/gray dotted line */
+            transform: translateX(-50%);
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: #C49A45;
+            font-size: 1.25rem;
+            background-color: #F4F1EA; /* To mask the dotted line behind it */
+            padding: 4px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .timeline-line {
+                left: 2rem;
+            }
+            .timeline-dot {
+                left: 2rem;
+            }
+            .timeline-content-left, .timeline-content-right {
+                width: 100%;
+                padding-left: 4rem !important;
+                padding-right: 1rem !important;
+                text-align: left !important;
+                margin-bottom: 3rem;
+            }
+            .timeline-content-left .icon-wrapper, .timeline-content-right .icon-wrapper {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+
+    <header class="max-w-4xl mx-auto text-center mb-12">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide uppercase leading-snug mb-6">
+            Searching For Social Justice:<br>
+            Four Emergent<br>
+            Phenomenological Themes
+        </h1>
+        
+        <!-- Decorative horizontal line with dot -->
+        <div class="flex items-center justify-center max-w-2xl mx-auto">
+            <div class="h-px bg-gray-400 flex-grow"></div>
+            <div class="mx-4 text-gray-400">
+                <i class="fa-solid fa-circle" style="font-size: 6px;"></i>
+            </div>
+            <div class="h-px bg-gray-400 flex-grow"></div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto relative pt-8 pb-16">
+        
+        <!-- Central dotted timeline -->
+        <div class="timeline-line hidden md:block"></div>
+        <!-- Mobile timeline line -->
+        <div class="timeline-line md:hidden block"></div>
+
+        <!-- Section 1: Normalization -->
+        <div class="relative flex flex-col md:flex-row items-center mb-16 md:mb-24 w-full">
+            <div class="timeline-content-left w-full md:w-1/2 md:pr-16 lg:pr-24 text-center md:text-center">
+                <div class="icon-wrapper mb-4">
+                    <i class="fa-solid fa-landmark text-5xl md:text-6xl text-[#C49A45]"></i>
+                </div>
+                <h2 class="text-xl md:text-2xl font-bold uppercase mb-4 tracking-wide">Normalization of Academic Racism</h2>
+                <ul class="text-left list-disc pl-5 space-y-3 text-lg md:text-xl md:inline-block">
+                    <li>White values as professional identity</li>
+                    <li>Hero worship of "deified" theorists</li>
+                    <li>Perpetuation of white ideas of wellness</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-dot top-0 md:top-1/2">
+                <i class="fa-solid fa-seedling"></i>
+            </div>
+            
+            <div class="w-full md:w-1/2"></div>
+        </div>
+
+        <!-- Section 2: Searching for Social Justice -->
+        <div class="relative flex flex-col md:flex-row items-center mb-16 md:mb-24 w-full">
+            <div class="w-full md:w-1/2 hidden md:block"></div>
+            
+            <div class="timeline-dot top-0 md:top-1/2">
+                <i class="fa-solid fa-seedling"></i>
+            </div>
+            
+            <div class="timeline-content-right w-full md:w-1/2 md:pl-16 lg:pl-24 text-center md:text-center">
+                <div class="icon-wrapper mb-4">
+                    <i class="fa-solid fa-seedling text-5xl md:text-6xl text-[#C49A45]"></i>
+                </div>
+                <h2 class="text-xl md:text-2xl font-bold uppercase mb-4 tracking-wide">Searching For Social Justice</h2>
+                <ul class="text-left list-disc pl-5 space-y-3 text-lg md:text-xl md:inline-block">
+                    <li>Minimal inclusion of social justice in curricula</li>
+                    <li>Leads to a need for continuing education outside of Master's/Doc programs</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 3: Structural Barriers -->
+        <div class="relative flex flex-col md:flex-row items-center mb-16 md:mb-24 w-full">
+            <div class="timeline-content-left w-full md:w-1/2 md:pr-16 lg:pr-24 text-center md:text-center">
+                <div class="icon-wrapper mb-4">
+                    <i class="fa-solid fa-book text-5xl md:text-6xl text-[#1A202C]"></i>
+                </div>
+                <h2 class="text-xl md:text-2xl font-bold uppercase mb-4 tracking-wide">Structural Barriers</h2>
+                <ul class="text-left list-disc pl-5 space-y-3 text-lg md:text-xl md:inline-block">
+                    <li>CACREP as a source of academic racism</li>
+                    <li>Not allowing the integration of different ways of knowing in favor of "canon" content</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-dot top-0 md:top-1/2">
+                <i class="fa-solid fa-seedling"></i>
+            </div>
+            
+            <div class="w-full md:w-1/2"></div>
+        </div>
+
+        <!-- Section 4: Advocacy & Change -->
+        <div class="relative flex flex-col md:flex-row items-center mb-16 md:mb-12 w-full">
+            <div class="w-full md:w-1/2 hidden md:block"></div>
+            
+            <div class="timeline-dot top-0 md:top-1/2">
+                <i class="fa-solid fa-seedling"></i>
+            </div>
+            
+            <div class="timeline-content-right w-full md:w-1/2 md:pl-16 lg:pl-24 text-center md:text-center">
+                <div class="icon-wrapper mb-4">
+                    <i class="fa-solid fa-leaf text-5xl md:text-6xl text-[#1A202C]"></i>
+                </div>
+                <h2 class="text-xl md:text-2xl font-bold uppercase mb-4 tracking-wide">Advocacy & Change</h2>
+                <ul class="text-left list-disc pl-5 space-y-3 text-lg md:text-xl md:inline-block">
+                    <li>Risk-free advocacy: advocacy is often too costly for participants without leadership positioning</li>
+                    <li>Making room for social justice: need to adapt CACREP standards to add unwritten social justice standards and include current events</li>
+                </ul>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="max-w-5xl mx-auto mt-12 pt-8 border-t border-gray-300">
+        <p class="text-sm md:text-base text-gray-700 leading-relaxed text-justify">
+            Reference: White, E., Nadrich, T., Walo-Roberts, S., Martinez, T., Crawford, C., & Ferguson, A. (2024). Searching for social justice: How counselor educators incorporate multicultural and social justice praxis across CACREP accredited programs. Journal for Social Action in Counseling & Psychology, 16(1), 43–58. https://doi.org/10.33043/y98zc67324
+        </p>
+    </footer>
+
+</body>
+</html>
